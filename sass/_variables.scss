@@ -1,0 +1,31 @@
+//Doc this later
+
+//Color Palette
+$main: #fff; //Backgrounds, anything branding-related
+$secondary: #fff; //Buttons, link colors
+$tertiary: #fff; //Footer color, table colors
+$accent: $tertiary; //Bold, border, hover
+$action: $main; //CTAs and whatnot
+
+//Open Sans
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+$open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+//Raleway
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+$raleway: 'Raleway', Helvetica, Arial, sans-serif;
+
+//Font families
+$helvetica: Helvetica, Arial, sans-serif;
+$times: Times, serif;
+
+//Default font settings
+$font-color: #333;
+$font-family: $open-sans;
+
+$heading-color: $font-color;
+$heading-font: $font-family;
+
+//Breakpoints
+$tablet: 44em;
+$desktop: 70em;

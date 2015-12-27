@@ -1,0 +1,85 @@
+@mixin box-sizing($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	-o-box-sizing: $value;
+	-ms-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin transition($property: all, $time: 0.2s) {
+	-webkit-transition: $property $time;
+	transition: $property $time;
+}
+
+@mixin center-element {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin button($color: $secondary, $text: #fff, $secondaryColor: $tertiary, $secondaryText: #fff) {
+	background-color: $color;
+	color: $text;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 15px;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+
+	@include transition(background-color, 0.3s);
+	@include transition(border-radius, 0.3s);
+
+	&:hover {
+		background-color: $secondaryColor;
+		color: $secondaryText;
+		border-radius: 0;
+	}
+}
+
+@mixin hexagon-image($width: 200px, $height: $width*2) {
+	width: $width;
+    height: $height;
+    margin: -80px 0 0 20px;
+
+	&.hex-container {
+		overflow: hidden;
+	    -webkit-transform: rotate(120deg);
+	       -moz-transform: rotate(120deg);
+	        -ms-transform: rotate(120deg);
+	         -o-transform: rotate(120deg);
+	            transform: rotate(120deg);
+	    cursor: pointer;
+
+	    .hex-inner-1 {
+	    	overflow: hidden;
+		    width: 100%;
+		    height: 100%;
+		    -webkit-transform: rotate(-60deg);
+		       -moz-transform: rotate(-60deg);
+		        -ms-transform: rotate(-60deg);
+		         -o-transform: rotate(-60deg);
+		            transform: rotate(-60deg);
+
+		    .hex-inner-2 {
+		    	width: 100%;
+			    height: 100%;
+			    background-repeat: no-repeat;
+			    background-position-x: 50%;
+			    background-position-y: 50%;
+			    visibility: visible;
+			    -webkit-transform: rotate(-60deg);
+			       -moz-transform: rotate(-60deg);
+			        -ms-transform: rotate(-60deg);
+			         -o-transform: rotate(-60deg);
+			            transform: rotate(-60deg);
+		    }
+		}
+	}
+}
+
+@mixin circle($width: 200px) {
+	width: $width;
+	height: $width;
+	border-radius: $width / 2; 
+}
