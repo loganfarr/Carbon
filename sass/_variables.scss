@@ -1,10 +1,10 @@
 //Doc this later
 
 //Color Palette
-$main: #fff; //Backgrounds, anything branding-related
-$secondary: #fff; //Buttons, link colors
-$tertiary: #fff; //Footer color, table colors
-$accent: $tertiary; //Bold, border, hover
+$main: #FF1313; //Backgrounds, anything branding-related, link colors
+$secondary: #FF7E13; //Buttons, hover, menu
+$tertiary: #DE1185; //Footer color, table colors
+$accent: $tertiary; //Bold, border, generally a darker color
 $action: $main; //CTAs and whatnot
 
 //Open Sans
@@ -29,3 +29,49 @@ $heading-font: $font-family;
 //Breakpoints
 $tablet: 44em;
 $desktop: 70em;
+
+//Wrapper settings
+$header-wrapper: transparent; //Background color for .l-header-wrapper
+$navigation-wrapper: transparent; //Background color for .l-navigation-wrapper
+$main-wrapper: transparent; //Background color for .l-main-wrapper
+$sidebar-first-background: transparent; //Background color for .l-region--sidebar-first
+$sidebar-second-background: transparent; //Background color for .l-region--sidebar-second
+$footer-background: transparent; //Background color for .l-footer-wrapper
+
+//Link settings
+$link-color: $secondary;
+$link-hover-color: $action;
+
+//Menu settings
+$menu-text-color: #fff;
+$menu-text-hover-color: darken($menu-text-color, 20%);
+$menu-item-background: $secondary;
+$menu-item-hover-background: darken($menu-item-background, 20%);
+
+//Button settings
+$button-background: $tertiary;
+$button-text: #fff;
+$button-padding: 15px 30px;
+$button-hover-background: $action;
+$button-hover-text: $button-text;
+
+//Table settings
+$table-row-border: 1px solid $tertiary;
+$table-heading-color: $tertiary;
+$table-heading-background: transparent;
+$table-even-row-background: #e5e5e5;
+$table-odd-row-background: transparent;
+
+//Misc. Global Settings 
+$global-border-color: $accent;
+$global-border-radius: 2px;
+
+//Messagebox Colors
+$status-bg: #dff0d8;
+$status-border: darken($status-bg, 20%);
+$info-bg: #d9edf7;
+$info-border: darken($info-bg, 20%);
+$warning-bg: #fcf8e3;
+$warning-border: darken($warning-bg, 20%);
+$error-bg: #f2dede;
+$error-border: darken($error-bg, 20%);

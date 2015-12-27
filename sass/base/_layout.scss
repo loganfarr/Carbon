@@ -34,6 +34,7 @@ $tab-columns: 12; // use 12 columns.
 $desk-columns: 16; // use 16 columns.
 
 .l-header,
+.l-region--navigation,
 .l-main,
 .l-footer {
   @include container; // Define these elements as the grid containers.
@@ -82,6 +83,7 @@ $desk-columns: 16; // use 16 columns.
 
 @include susy-breakpoint($desktop, $desk-columns) {
   .l-header,
+  .l-region--navigation,
   .l-main,
   .l-footer {
     max-width: container($desk-columns); // Set the max-width to the given column count.

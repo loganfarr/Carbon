@@ -145,9 +145,11 @@
     <?php endif; ?>
 
     <?php if($page['footer']): ?>
-        <footer class="l-footer" role="contentinfo">
-            <?php print render($page['footer']); ?>
-        </footer>
+        <div class"l-footer-wrapper">
+            <footer class="l-footer" role="contentinfo">
+                <?php print render($page['footer']); ?>
+            </footer>
+        </div>
     <?php endif; ?>
 </div>
 

@@ -5,6 +5,10 @@
   *
   * To modify structural styles. see base/_layout.scss
 **/
+* {
+	@include box-sizing(border-box);
+}
+
 
 body {
 	font-family: $font-family;
@@ -54,7 +58,7 @@ p {
 	margin: 10px;
 }
 
-em, i {
+em, i, q {
 	font-style: italic;
 }
 
@@ -62,12 +66,29 @@ b, strong {
 	font-weight: bold;
 }
 
+small, sup, sub {
+	font-size: 70%;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 a {
-	color: $secondary;
+	color: $link-color;
 	text-decoration: none;
 
 	&:hover {
-		color: $accent;
+		color: $link-hover-color;
 	}
 
 	&.button {
@@ -85,7 +106,7 @@ input[type="submit"] {
 	border: 0; 
 	background-image: none;
 	font-family: $font-family;
-	@include button($action);
+	@include button($secondary, $action);
 }
 
 select {
@@ -123,5 +144,146 @@ footer {
 
 	@include breakpoint($desktop) {
 		padding: 0;
+	}
+}
+
+//Lists
+ul {
+	padding-left: 30px;
+	
+	li {
+		list-style-type: circle;
+		margin-bottom: 5px;
+	}
+
+	&.tabs,
+	&.links--inline,
+	&.vertical-tabs-list {
+		padding-left: 0;
+		
+		li {
+			list-style-type: none;
+			margin-right: 10px;
+			margin-bottom: 0;
+		}
+	}
+
+	&.tabs--primary {
+		border-bottom: 0;
+
+		li {
+			a {
+				@include button(7px 15px);
+
+				&.active {
+					color: $button-hover-text;
+					background: $button-hover-background;
+				}
+			}
+		}
+	}
+}
+
+ul.breadcrumb {
+	@include clearfix;
+	display: none;
+
+	li {
+		list-style-type: none;
+		float: left;
+		margin-right: 5px;
+
+		&:after {
+			content: ' »';
+		}
+
+		&:last-child:after {
+			content: '';
+		}
+	}
+}
+
+ol {
+	padding-left: 30px;
+	
+	li {
+		list-style-type: decimal; 
+		margin-bottom: 5px;
+	}
+}
+
+dl {
+	dt {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+
+	dd {
+		text-indent: 1em;
+	}
+}
+
+
+//Tables
+table {
+	width: 100%;
+
+	caption {
+		margin: 10px 0;
+		text-align: center;
+		font-style: italic;
+		padding: 10px 0;
+	}
+
+	thead {
+		background: $table-heading-background;
+	}
+	
+	tr:nth-child(odd), tr.odd {
+		background: $table-odd-row-background;
+	}
+	
+	tr:nth-child(even), tr.even {
+		background: $table-even-row-background;
+	}
+	
+	td, th {
+		padding: 7px;
+		vertical-align: middle;
+	}
+}
+
+//Fieldset
+fieldset {
+	margin-bottom: 15px;
+	border: 1px solid $global-border-color;
+	
+	legend {
+		background: #fff;
+		position: relative;
+		top: -5px;
+	}
+	
+	div.fieldset-wrapper {
+		padding: 20px;
+		@include box-sizing(border-box);
+	}
+}
+
+//Message box styles
+.messages {
+	&.status {
+		background-color: $status-bg;
+		border-color: $status-border;
+	}
+	
+	&.warning {
+		background-color: $warning-bg;
+		border-color: $warning-border;
+	}
+	
+	&.error {
+		background-color: $error-bg;
+		border-color: $error-border;
 	}
 }
