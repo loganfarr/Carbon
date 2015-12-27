@@ -38,15 +38,12 @@ $sidebar-first-background: transparent; //Background color for .l-region--sideba
 $sidebar-second-background: transparent; //Background color for .l-region--sidebar-second
 $footer-background: transparent; //Background color for .l-footer-wrapper
 
+$wrapper-padding: 20px 0;
+$wrapper-margin: 10px 0;
+
 //Link settings
 $link-color: $secondary;
 $link-hover-color: $action;
-
-//Menu settings
-$menu-text-color: #fff;
-$menu-text-hover-color: darken($menu-text-color, 20%);
-$menu-item-background: $secondary;
-$menu-item-hover-background: darken($menu-item-background, 20%);
 
 //Button settings
 $button-background: $tertiary;
@@ -54,6 +51,14 @@ $button-text: #fff;
 $button-padding: 15px 30px;
 $button-hover-background: $action;
 $button-hover-text: $button-text;
+
+//Menu settings
+$menu-text-color: #fff;
+$menu-text-hover-color: darken($menu-text-color, 10%);
+$menu-item-background: $secondary;
+$menu-item-hover-background: darken($menu-item-background, 20%);
+$menu-item-padding: $button-padding;
+$menu-background: $menu-item-background;
 
 //Table settings
 $table-row-border: 1px solid $tertiary;

@@ -1,3 +1,10 @@
+.l-header-wrapper,
+.l-navigation-wrapper,
+.l-main-wrapper {
+	padding: $wrapper-padding;
+	margin: $wrapper-margin;
+}
+
 .l-header-wrapper {
 	background: $header-wrapper;
 }

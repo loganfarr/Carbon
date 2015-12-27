@@ -1,0 +1,80 @@
+//Default menu styling
+.l-region--navigation {
+	nav {
+		ul.menu {
+			background: $menu-background;
+			padding-left: 0;
+
+			li {
+				list-style-type: none;
+				margin-bottom: 0px;
+
+				&:hover {
+					background: $menu-item-hover-background;
+				}
+
+				a {
+					color: $menu-text-color;
+					background: $menu-item-background;
+					display: inline-block;
+					padding: $menu-item-padding;
+
+					&:hover {
+						color: $menu-text-hover-color;	
+						background: $menu-item-background;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Superfish styling
+.sf-menu {
+	padding-left: 0;
+
+	li {
+		list-style-type: none;
+		margin-bottom: 0px;
+
+		&:hover {
+			background: $menu-item-hover-background;
+
+			a {
+				color: $menu-text-hover-color;
+			}
+		}
+
+		a {
+			color: $menu-text-color;
+			background: $menu-item-background;
+			padding: $menu-item-padding;
+
+			&:hover {
+				color: $menu-text-hover-color;	
+				background: $menu-item-hover-background;
+			}
+		}
+
+		&.menuparent ul {
+			background: $menu-item-hover-background;
+			color: $menu-text-hover-color;
+
+			li {
+				a {
+					color: $menu-text-hover-color;
+					background: $menu-item-hover-background;
+
+					&:hover {
+						color: $menu-text-color;
+						background: $menu-item-background;
+					}
+				}
+			}
+
+			li:hover {
+				background: $menu-item-background;
+			}
+		}
+	}
+}
