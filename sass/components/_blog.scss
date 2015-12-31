@@ -1,0 +1,17 @@
+.blog-view {
+	.views-row {
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid $light-gray;
+		@include clearfix;
+	}
+
+	.views-field-field-image {
+		text-align: center;
+
+		@include breakpoint($tablet) {
+			float: left;
+			margin-right: 25px;
+		}
+	}
+}

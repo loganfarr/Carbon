@@ -3244,6 +3244,20 @@ fieldset {
 .fa-percent:before {
   content: ""; }
 
-/* No files to import found in components/**\/* */
+/* line 2, ../sass/components/_blog.scss */
+.blog-view .views-row {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 9, ../sass/components/_blog.scss */
+.blog-view .views-field-field-image {
+  text-align: center; }
+  @media (min-width: 44em) {
+    /* line 9, ../sass/components/_blog.scss */
+    .blog-view .views-field-field-image {
+      float: left;
+      margin-right: 25px; } }
 
 /*# sourceMappingURL=boilerplate.styles.css.map */
