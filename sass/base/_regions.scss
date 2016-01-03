@@ -1,26 +1,37 @@
 .l-header-wrapper,
 .l-navigation-wrapper,
-.l-main-wrapper {
+.l-main-wrapper,
+.l-footer-wrapper {
 	padding: $wrapper-padding;
 	margin: $wrapper-margin;
 }
 
 .l-header-wrapper {
 	background: $header-wrapper;
+	color: $header-font-color;
 }
 
 .l-navigation-wrapper {
 	background: $navigation-wrapper;
+	color: $navigation-font-color;
 }
 
 .l-main-wrapper {
 	background: $main-wrapper;
+	color: $main-font-color;
 }
 
 .l-region--sidebar-first {
 	background: $sidebar-first-background;
+	color: $sidebar-first-font-color;
 }
 
 .l-region--sidebar-second {
 	background: $sidebar-second-background;
+	color: $sidebar-second-font-color;
+}
+
+.l-footer-wrapper {
+	background: $footer-background;
+	color: $footer-font-color;
 }

@@ -145,7 +145,7 @@
     <?php endif; ?>
 
     <?php if($page['footer']): ?>
-        <div class"l-footer-wrapper">
+        <div class="l-footer-wrapper">
             <footer class="l-footer" role="contentinfo">
                 <?php print render($page['footer']); ?>
             </footer>

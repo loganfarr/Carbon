@@ -34,11 +34,17 @@ $desktop: 70em;
 
 //Wrapper settings
 $header-wrapper: transparent; //Background color for .l-header-wrapper
+$header-font-color: $font-color; //Default color for .l-header-wrapper
 $navigation-wrapper: transparent; //Background color for .l-navigation-wrapper
+$navigation-font-color: $font-color; //Default color for .l-navigation-wrapper
 $main-wrapper: transparent; //Background color for .l-main-wrapper
+$main-font-color: $font-color; //Default color for .l-main-wrapper
 $sidebar-first-background: transparent; //Background color for .l-region--sidebar-first
+$sidebar-first-font-color: $font-color; //Default color for .l-region--sidebar-first
 $sidebar-second-background: transparent; //Background color for .l-region--sidebar-second
+$sidebar-second-font-color: $font-color; //Default color for .l-region--sidebar-second
 $footer-background: transparent; //Background color for .l-footer-wrapper
+$footer-font-color: $font-color; //Default color for .l-footer-wrapper
 
 $wrapper-padding: 20px 0;
 $wrapper-margin: 10px 0;

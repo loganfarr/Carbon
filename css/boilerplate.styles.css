@@ -508,29 +508,40 @@ fieldset {
 /* line 1, ../sass/base/_regions.scss */
 .l-header-wrapper,
 .l-navigation-wrapper,
-.l-main-wrapper {
+.l-main-wrapper,
+.l-footer-wrapper {
   padding: 20px 0;
   margin: 10px 0; }
 
-/* line 8, ../sass/base/_regions.scss */
+/* line 9, ../sass/base/_regions.scss */
 .l-header-wrapper {
-  background: transparent; }
+  background: transparent;
+  color: #333; }
 
-/* line 12, ../sass/base/_regions.scss */
+/* line 14, ../sass/base/_regions.scss */
 .l-navigation-wrapper {
-  background: transparent; }
+  background: transparent;
+  color: #333; }
 
-/* line 16, ../sass/base/_regions.scss */
+/* line 19, ../sass/base/_regions.scss */
 .l-main-wrapper {
-  background: transparent; }
-
-/* line 20, ../sass/base/_regions.scss */
-.l-region--sidebar-first {
-  background: transparent; }
+  background: transparent;
+  color: #333; }
 
 /* line 24, ../sass/base/_regions.scss */
+.l-region--sidebar-first {
+  background: transparent;
+  color: #333; }
+
+/* line 29, ../sass/base/_regions.scss */
 .l-region--sidebar-second {
-  background: transparent; }
+  background: transparent;
+  color: #333; }
+
+/* line 34, ../sass/base/_regions.scss */
+.l-footer-wrapper {
+  background: transparent;
+  color: #333; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
